@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>QQ and Baidu</title>
+</head>
+<script language="javascript" src="jquery.js"></script>
+
+<script type="text/javaScript">
+    function postStr(str1,str2){
+        document.getElementById("text1").value=str1;
+        document.getElementById("text2").value=str2;
+        return document.getElementById("text3").value;
+        //return "javaScript返回值啦";
+    }
+function baidu(){
+var str1=document.getElementById("text1").value;
+var str2=document.getElementById("text2").value;
+   window.location = "/getInfo/"+str1;
+}
+
+function qq(){
+    
+    share('分享的标题','分享的内容','图片地址');
+    
+    
+    showalert();
+}
+
+function share(){
+    alert('aa');
+}
+    </script>
+<body>
+
+
+<input type="button" onclick="baidu();" value="第一种方式"/>
+
+<input type="button" onclick="qq();" value="jsFramework(推荐)"/>
+
+<p><input type="text" id="text1" value="实参1"></p>
+<p><input type="text" id="text2" value="实参2"></p>
+<p><input type="text" id="text3" value="返回值"></p>
+
+
+   
+    
+    
+   
+</body>
+</html>
